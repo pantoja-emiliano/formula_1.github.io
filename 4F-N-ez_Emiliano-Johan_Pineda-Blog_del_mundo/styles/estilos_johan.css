@@ -1,0 +1,79 @@
+/* clase Generales*/
+
+body{
+    background-color: black;
+    color: #FFFF;
+}
+article{
+    background-color: rgb(44, 43, 43);
+    padding: 1.5 rem ;
+    border-bottom:  1px solid #FFFFFF;
+}
+#titulo_del_blog{
+    text-align: center;
+    font-size: 3remtea;
+}
+/* Terminan clases generales  */
+
+/* barra de navegación */
+.resaltado{
+    color: yellow;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+}
+/* fin barra de navegación */
+
+/* footer del blog */
+#footer_blog{
+    margin: 2rem;
+}
+/* fin del footer del blog */
+
+/* ilustraciones */
+.ilustracion{
+    border: 4px solid #FFFFFF;
+    display: inline;
+}
+.figcaption_estilo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+/* fin ilustraciones */
+
+/*inicia grid*/
+section{
+    /*para que se despliegue como grid*/
+    display: grid;
+    /*para crear una reja de 12 columnas*/
+    grid-template-columns: repeat(12, 1fr);
+    /*para que los renglones ocupen el alto necesario*/
+    grid-auto-rows: auto;
+    /*espacio entre los elementos*/
+    gap: 3rem;
+}
+/*termina grid*/
+
+/*para el header que esta dentro de section*/
+section>header{
+    grid-column: span 12;
+}
+
+/*para el main que esta dentro de section*/
+section>main{
+    grid-column: span 8;
+}
+
+/*para el aside que esta dentro de section*/
+section>aside{
+    grid-column: span 4;
+}
+
+/*para el footer que esta dentro de section*/
+section>footer{
+    grid-column: span 12;
+}
